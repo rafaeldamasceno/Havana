@@ -446,7 +446,7 @@ var discussionMoreDataHelper = new MoreDataHelper("discussions-toggle-more-data-
 				</div>
 				<script type="text/javascript">if (!$(document.body).hasClassName('process-template')) { Rounder.init(); }</script>
 				<div>
-				<p><iframe src="https://discordapp.com/widget?id=524768066907668521&theme=light" height="280" allowtransparency="true" frameborder="0"></iframe></p>
+				<!-- <p><iframe src="https://discordapp.com/widget?id=524768066907668521&theme=light" height="280" allowtransparency="true" frameborder="0"></iframe></p> -->
 				</div>
 				<script type="text/javascript">if (!$(document.body).hasClassName('process-template')) { Rounder.init(); }</script>
 

@@ -84,7 +84,7 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 							<div class="landing-text-2"><span>Find your partner...</span></div>
 							<div class="landing-text-3"><span>...and make new friends :)</span></div>							
 							{% endif %}
-							<div id="landing-register-text"><a href="https://classichabbo.com/register"><span>Join now, it's free »</span></a></div>
+							<div id="landing-register-text"><a href="http://ayylmao.hopto.org/register"><span>Join now, it's free »</span></a></div>
 							<div id="landing-promotional-text"><span>Habbo is a virtual world where you can meet and find your true love.</span></div>
 						</div>
 					</div>			
@@ -94,7 +94,7 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 							<div class="landing-text-1"><span>Virtual world, real fun</span></div>
 							<div class="landing-text-2"><span>Create your Habbo...</span></div>
 							<div class="landing-text-3"><span>...and make new friends :)</span></div>
-							<div id="landing-register-text"><a href="https://classichabbo.com/register"><span>Join now, it's free »</span></a></div>
+							<div id="landing-register-text"><a href="http://ayylmao.hopto.org/register"><span>Join now, it's free »</span></a></div>
 							<div id="landing-promotional-text"><span>Habbo is a virtual world where you can meet and make friends.</span></div>
 						</div>
 					</div>

@@ -397,7 +397,7 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
                 <h3>Exclusive Furniture!</h3>
                 <p>Join Habbo Club today and get access to exclusive furniture!</p>
 
-                <p class="link"><a href="https://classichabbo.com/credits/club">Go there &raquo;</a></p>
+                <p class="link"><a href="http://ayylmao.hopto.org/credits/club">Go there &raquo;</a></p>
             </div>
         </li>
         -->
@@ -661,7 +661,7 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 					<!-- <p><a href="{{ site.sitePath }}/community"><img src="https://i.imgur.com/87IsMuC.png"></a></p> -->
 					<!-- <p><a href="{{ site.sitePath }}/community"><img src="https://i.imgur.com/SGFjYN2.gif"></a></p> -->
 					<!-- <p><a href="{{ site.sitePath }}"><img src="https://i.imgur.com/9lUdOG1.png"></a></p> -->
-					<p><iframe src="https://discordapp.com/widget?id=524768066907668521&theme=light" height="280" allowtransparency="true" frameborder="0"></iframe></p>
+					<!-- <p><iframe src="https://discordapp.com/widget?id=524768066907668521&theme=light" height="280" allowtransparency="true" frameborder="0"></iframe></p> -->
 					</div>
 					<script type="text/javascript">if (!$(document.body).hasClassName('process-template')) { Rounder.init(); }</script>
 				<div class="habblet-container ">		
