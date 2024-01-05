@@ -37,7 +37,9 @@ public class ImagerController {
                     .setDefaultRequestConfig(reqConfig)
                     .build()) {
 
-                HttpGet request = new HttpGet(GameConfiguration.getInstance().getString("site.imaging.endpoint") + webConnection.request().uri());
+                HttpGet request = webConnection.request().uri().contains("furni") ? 
+                    new HttpGet(webConnection.request().uri().replace("/habbo-imaging/furni", "http://chroma/")) : 
+                    new HttpGet(GameConfiguration.getInstance().getString("site.imaging.endpoint") + webConnection.request().uri());
                 request.addHeader(HttpHeaders.USER_AGENT, "Imager");
 
                 try (var r = httpClient.execute(request)) {
