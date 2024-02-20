@@ -72,13 +72,13 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 							<h2 class="title">Shockwave detection							</h2>
 						<div class="box-content">
     <div>
-     <p>Oops, in order to enter the hotel you need <b>Adobe Shockwave player</b>. Shockwave is free and takes only a <b>minute or two</b> to install.</p>  
+     <p>Oops, in order to enter the hotel through here, you need <b>Adobe Shockwave player</b>. However, you can instead download our launcher, which is <b>small and doesn't require installation</b>.</p>  
     </div>
     <div id="swdetection"></div>
     <div class="install-shockwave">
         <div id="shockwave-install-button">
             <div class="shockwave-icon">
-	            <a class="new-button" href="{{ site.sitePath }}/shockwave_help" id="install-shockwave-link"><b>Install now</b><i></i></a>
+	            <a class="new-button" href="{{ site.sitePath }}/HabboLauncher.exe" id="install-shockwave-link"><b>Download launcher</b><i></i></a>
             </div>
         </div>
         <div id="shockwave-install-progressbar">

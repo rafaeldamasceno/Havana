@@ -16,6 +16,7 @@ var andSoItBegins = (new Date()).getTime();
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/libs.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/common.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/fullcontent.js" type="text/javascript"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/style.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/buttons.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/boxes.css" type="text/css" />
