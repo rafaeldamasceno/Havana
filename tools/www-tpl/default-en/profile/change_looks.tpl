@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html" />
 	<title>{{ site.siteName }}: My details </title>
-
+	
 <script type="text/javascript">
 var andSoItBegins = (new Date()).getTime();
 </script>
@@ -16,6 +16,7 @@ var andSoItBegins = (new Date()).getTime();
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/libs.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/common.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/fullcontent.js" type="text/javascript"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/style.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/buttons.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/boxes.css" type="text/css" />
@@ -235,14 +236,22 @@ swfobj.addVariable("userHasClub", "1");
 {% endif %}
 
 if (deconcept.SWFObjectUtil.getPlayerVersion()["major"] >= 8) {
-	$("settings-editor").setStyle({ textAlign: "center"});	swfobj.write("settings-editor");
-	$("settings-form").show();
-	
-	{% if playerDetails.hasClubSubscription() %}
+$("settings-editor").setStyle({ textAlign: "center"});	swfobj.write("settings-editor");
+$("settings-form").show();
+
+{% if playerDetails.hasClubSubscription() %}
 		$("settings-wardrobe").show();}
 	{% else %}
 		}
-	{% endif %}
+{% endif %}
+</script>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
 </script>
 
 </form>

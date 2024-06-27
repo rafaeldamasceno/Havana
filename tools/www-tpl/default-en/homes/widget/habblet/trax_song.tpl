@@ -5,6 +5,14 @@ src="{{ site.sitePath }}/flash/traxplayer/traxplayer.swf" name="traxplayer" qual
 base="{{ site.sitePath }}/flash/traxplayer/" allowscriptaccess="always" menu="false"
 wmode="transparent" flashvars="songUrl={{ site.sitePath }}/trax/song/{{ song.getId() }}&amp;sampleUrl={{ site.sitePath }}/client/hof_furni/mp3/"
 height="66" width="210" />
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
+</script>
 {% else %}
 <div id="traxplayer-content" style="text-align: center;"><img src="{{ site.staticContentPath }}/web-gallery/images/traxplayer/player.png"/></div>
 {% endif %}

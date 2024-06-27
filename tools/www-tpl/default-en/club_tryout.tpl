@@ -16,6 +16,7 @@ var andSoItBegins = (new Date()).getTime();
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/libs.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/common.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/fullcontent.js" type="text/javascript"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/style.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/buttons.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.staticContentPath }}/web-gallery/v2/styles/boxes.css" type="text/css" />
@@ -117,10 +118,16 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
     swfobj.addVariable("figure", "{{ ("figure" is present) ? figure : "" }}");
     swfobj.addVariable("gender", "{{ ("sex" is present) ? sex : ""  }}");
     swfobj.addVariable("showClubSelections", "1");
-    if (deconcept.SWFObjectUtil.getPlayerVersion()["major"] >= 8) {
-	    $("flashcontent").setStyle({ textAlign: "center", "marginTop" : "10px" });
-	    swfobj.write("flashcontent");	    
-    }
+	$("flashcontent").setStyle({ textAlign: "center", "marginTop" : "10px" });
+	swfobj.write("flashcontent");	    
+</script>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
 </script>			
 					</div>
 				</div>
