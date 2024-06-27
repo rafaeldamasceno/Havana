@@ -32,8 +32,8 @@ public class ProxyHabblet {
                     "\n" +
                     "        <li class=\"even room-occupancy-2\" roomid=\"1\">\n" +
                     "            <div>\n" +
-                    "                <span class=\"room-name\"><a href=\"http://localhost/client?forwardId=2&amp;roomId=1\" onclick=\"HabboClient.roomForward(this, '1', 'private'); return false;\" target=\"client\">Room name</a></span>\n" +
-                    "                <span class=\"room-owner\"><a href=\"http://localhost/home/Alex\">Alex</a></span>                \n" +
+                    "                <span class=\"room-name\"><a href=\"" + GameConfiguration.getInstance().getString("site.path") + "/client?forwardId=2&amp;roomId=1\" onclick=\"HabboClient.roomForward(this, '1', 'private'); return false;\" target=\"client\">Room name</a></span>\n" +
+                    "                <span class=\"room-owner\"><a href=\"" + GameConfiguration.getInstance().getString("site.path") + "/home/Alex\">Alex</a></span>                \n" +
                     "\t\t\t\t<p>test</p>\n" +
                     "            </div>\n" +
                     "        </li>\n" +

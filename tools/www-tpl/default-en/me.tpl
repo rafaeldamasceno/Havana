@@ -380,7 +380,7 @@
                                           <h3>Exclusive Furniture!</h3>
                                           <p>Join Habbo Club today and get access to exclusive furniture!</p>
 
-                                          <p class="link"><a href="https://classichabbo.com/credits/club">Go there &raquo;</a></p>
+                                          <p class="link"><a href="{{ site.sitePath }}/credits/club">Go there &raquo;</a></p>
                                       </div>
                                   </li>
                                   -->

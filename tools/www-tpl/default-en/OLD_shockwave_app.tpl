@@ -244,10 +244,10 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 						<p style="margin-top:10px; margin-right:10px">There are two versions to download. The standard download and the lite download.</p>
 						<p><b>Standard version:</b></p>
 						<p>The standard version contains all the furniture for instant loading. New furniture will be downloaded if the file doesn't exist.</p>
-						<p> - <a href="https://classichabbo.com/classichabbo_exe.zip">Click here</a> to download (82 MB)</p>
+						<p> - <a href="{{ site.sitePath }}/classichabbo_exe.zip">Click here</a> to download (82 MB)</p>
 						<p><b>Lite version:</b></p>
 						<p>Contains no furniture. New furniture will be downloaded if the file doesn't exist.</p>
-						<p> - <a href="https://classichabbo.com/classichabbo_exe_lite.zip">Click here</a> to download (25 MB)</p>
+						<p> - <a href="{{ site.sitePath }}/classichabbo_exe_lite.zip">Click here</a> to download (25 MB)</p>
 					</div>
 				</div>
 			</div>

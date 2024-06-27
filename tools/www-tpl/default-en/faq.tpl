@@ -105,7 +105,7 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 
 </div>
 
-<div id="faq-footer" class="clearfix"><p><a href="http://localhost/" target="_self">Homepage</a> | <a href="http://localhost/papers/disclaimer" target="_self">Disclaimer</a> | <a href="http://localhost/papers/privacy" target="_self">Privacy Policy</a> | <a href="http://localhost/help/1" target="_new">Contact Us</a></p>
+<div id="faq-footer" class="clearfix"><p><a href="{{ site.sitePath }}" target="_self">Homepage</a> | <a href="{{ site.sitePath }}/papers/disclaimer" target="_self">Disclaimer</a> | <a href="{{ site.sitePath }}/papers/privacy" target="_self">Privacy Policy</a> | <a href="{{ site.sitePath }}/help/1" target="_new">Contact Us</a></p>
 		<p>This is an unofficial Habbo fansite to see what Habbo looked like in 2009.<br />HABBO is a registered trademark of Sulake Corporation. All rights reserved to their respective owner(s).</p>
 	</div>			</div>
         </div>

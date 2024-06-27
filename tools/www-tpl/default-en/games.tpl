@@ -9,7 +9,7 @@
 var andSoItBegins = (new Date()).getTime();
 </script>
     <link rel="shortcut icon" href="{{ site.staticContentPath }}/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="alternate" type="application/rss+xml" title="Habbo: RSS" href="https://classichabbo.com/articles/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Habbo: RSS" href="{{ site.sitePath }}/articles/rss.xml" />
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/libs2.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/visual.js" type="text/javascript"></script>
 <script src="{{ site.staticContentPath }}/web-gallery/static/js/libs.js" type="text/javascript"></script>

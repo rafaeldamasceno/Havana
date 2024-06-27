@@ -422,9 +422,9 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 	<div class="ad-container">
 	{% if (user.hasClubSubscription() == false) %}
 		{% if (editMode == true) %}
-			<a href="{{ site.sitePath }}/club.php"><img src="{{ site.staticContentPath }}/web-gallery/album1/hc_habbohome_banner_holo.png" id="galleryImage" border="0" alt="hc habbohome banner holo"></a>
+			<a href="{{ site.sitePath }}/club"><img src="{{ site.staticContentPath }}/web-gallery/album1/hc_habbohome_banner_holo.png" id="galleryImage" border="0" alt="hc habbohome banner holo"></a>
 		{% else %}
-			<a href="{{ site.sitePath }}/club.php"><img src="{{ site.staticContentPath }}/c_images/banners/160x600/{{ homeBannerAd }}" id="galleryImage" border="0" alt="hc habbohome banner holo"></a>
+			<a href="{{ site.sitePath }}/club"><img src="{{ site.staticContentPath }}/c_images/banners/160x600/{{ homeBannerAd }}" id="galleryImage" border="0" alt="hc habbohome banner holo"></a>
 		{% endif %}
 	{% endif %}
 			</div>

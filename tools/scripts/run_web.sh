@@ -2,4 +2,4 @@
 
 CLASSPATH=lib/*
 
-java -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true -classpath $CLASSPATH org.alexdev.http.HavanaWeb
+java -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true -classpath "$CLASSPATH" org.alexdev.http.HavanaWeb

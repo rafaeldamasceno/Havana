@@ -212,7 +212,7 @@ INSERT INTO `settings_desc` (`setting`, `description`, `category`) VALUES
 ('catalogue.frontpage.input.1', 'ts_coll_09_sept_asteroid.gif', NULL),
 ('catalogue.frontpage.input.2', '¡Servidor Beta!', NULL),
 ('catalogue.frontpage.input.3', 'Porfavor comparte con nosotros mientras que hacemos los arreglos finales', NULL),
-('catalogue.frontpage.input.4', 'http://localhost', NULL),
+('catalogue.frontpage.input.4', 'http://ayylmao.hopto.org', NULL),
 ('chat.spam.count', '10', NULL),
 ('childline.group.id', 'Set the ID of Childline group', 'server'),
 ('club.gift.interval', '30', NULL),
