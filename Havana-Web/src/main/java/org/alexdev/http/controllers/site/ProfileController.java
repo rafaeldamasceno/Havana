@@ -501,9 +501,6 @@ public class ProfileController {
         } else if (EmailUtil.isAlreadyTradePass(playerDetails.getId(), playerDetails.getEmail())) {
             webConnection.session().set("alertMessage", "This email is already used for a trade pass.");
             webConnection.session().set("alertColour", "red");
-        } else if (!playerDetails.discordVerified) {
-            webConnection.session().set("alertMessage", "Please <a href=\"https://discordapp.com/api/oauth2/authorize?client_id=1082753885657124975&redirect_uri=" + GameConfiguration.getInstance().getString("site.path") + "/api/discord&response_type=code&scope=identify\">link your account with Discord</a> in order to turn trading on");
-            webConnection.session().set("alertColour", "red");
         } else {
             webConnection.session().set("alertMessage", "Security settings updated successfully");
             webConnection.session().set("alertColour", "green");
