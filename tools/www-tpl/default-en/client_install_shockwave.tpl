@@ -72,12 +72,14 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
 							<h2 class="title">Shockwave has reached end of life							</h2>
 						<div class="box-content">
     <div>
-     <p>Oops, in order to enter the hotel you need to download the <b>executeable</b>. It's only 15 megabytes and only takes a <b>minute or two</b> to install. There is no installer required or files that are put into your system. <br><br> If you need any help, reach out to us at <a href="https://discord.gg/NJ4eq8tm5R">discord</a></p>
+        <p>Oops, in order to enter the hotel through the browser, you need <b>Adobe Shockwave player</b>. However, you can instead download our launcher, which is <b>small and doesn't require installation</b>.</p>  
     </div>
     <div id="swdetection"></div>
     <div class="install-shockwave">
         <div id="shockwave-install-button">
-            <p><a href="https://discord.gg/NJ4eq8tm5R"><img style="display:block;margin-left:auto;margin-right:auto;width:50%;" src="{{ site.staticContentPath }}/c_images/hot_campaign_images_gb/click_to_play.png" alt="Join Discord" /></a></p>
+            <div class="shockwave-icon">
+	            <a class="new-button" href="{{ site.siteStaticContentPath }}/HabboLauncher.exe" id="install-shockwave-link"><b>Download launcher</b><i></i></a>
+            </div>
         </div>
         <div id="shockwave-install-progressbar">
             <div class="shockwave-icon progressbar"></div>

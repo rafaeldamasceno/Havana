@@ -125,10 +125,11 @@
             <div id="flash-container">
                 <div id="content" style="width: 400px; margin: 20px auto 0 auto;">
                     <div class="cbb clearfix">
-                        <h2 class="title">Flash player has reached end of life</h2>
+                        <h2 class="title">Flash Player has reached end of life</h2>
 						<div class="box-content">
-							<p>In order to play you need to download HabboLegacy's executeable client from <a href="">here</a>. If you need any help reach out to us at <a href="https://discord.gg/NJ4eq8tm5R">discord</a></p>
-							<p><a href="https://discord.gg/NJ4eq8tm5R"><img src="{{ site.staticContentPath }}/c_images/hot_campaign_images_gb/click_to_play.png" alt="Join Discord" /></a></p>
+                            <p>Oops, in order to enter the hotel through the browser, you need <b>Flash Player</b>. However, you can instead download our launcher, which is <b>small and doesn't require installation</b>.</p> 
+                            <a class="new-button" href="{{ site.siteStaticContentPath }}/HabboLauncher.exe" id="install-shockwave-link"><b>Download launcher</b><i></i></a>
+							<p><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></p>
 						</div>
                     </div>
                 </div>
