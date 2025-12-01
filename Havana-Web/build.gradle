@@ -51,7 +51,7 @@ dependencies {
     implementation project(':Havana-Server')
 
     implementation 'com.github.Quackster:Avatara4j:v1.0.2'
-    implementation 'com.github.Quackster:duckHTTPD:v1.0.1'
+    implementation 'com.github.Quackster:duckHTTPD:v1.0.2'
 }
 
 
