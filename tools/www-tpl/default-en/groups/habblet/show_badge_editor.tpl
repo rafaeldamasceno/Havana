@@ -15,3 +15,11 @@ swfobj.addVariable("xml_url", "{{ site.staticContentPath }}/xml/badge_data.xml")
 swfobj.addParam("allowScriptAccess", "always");
 swfobj.write("badge-editor-flash");
 </script>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
+</script>

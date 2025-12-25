@@ -6,6 +6,7 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<title>{{ site.siteName }}: Club Tryout </title>
 
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <script type="text/javascript">
 var andSoItBegins = (new Date()).getTime();
 </script>
@@ -118,9 +119,17 @@ body { behavior: url({{ site.staticContentPath }}/web-gallery/js/csshover.htc); 
     swfobj.addVariable("gender", "{{ ("sex" is present) ? sex : ""  }}");
     swfobj.addVariable("showClubSelections", "1");
     if (deconcept.SWFObjectUtil.getPlayerVersion()["major"] >= 8) {
-	    $("flashcontent").setStyle({ textAlign: "center", "marginTop" : "10px" });
-	    swfobj.write("flashcontent");	    
-    }
+	$("flashcontent").setStyle({ textAlign: "center", "marginTop" : "10px" });
+	swfobj.write("flashcontent");	  
+	}  
+</script>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
 </script>			
 					</div>
 				</div>

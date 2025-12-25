@@ -5,7 +5,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html" />
 	<title>{{ site.siteName }}: My details </title>
-
+	
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <script type="text/javascript">
 var andSoItBegins = (new Date()).getTime();
 </script>
@@ -235,14 +236,22 @@ swfobj.addVariable("userHasClub", "1");
 {% endif %}
 
 if (deconcept.SWFObjectUtil.getPlayerVersion()["major"] >= 8) {
-	$("settings-editor").setStyle({ textAlign: "center"});	swfobj.write("settings-editor");
-	$("settings-form").show();
-	
-	{% if playerDetails.hasClubSubscription() %}
+$("settings-editor").setStyle({ textAlign: "center"});	swfobj.write("settings-editor");
+$("settings-form").show();
+
+{% if playerDetails.hasClubSubscription() %}
 		$("settings-wardrobe").show();}
 	{% else %}
 		}
-	{% endif %}
+{% endif %}
+</script>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+	"autoplay": "on",
+	"unmuteOverlay": "hidden",
+	"splashScreen": false,
+};
 </script>
 
 </form>

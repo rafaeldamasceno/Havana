@@ -6,6 +6,7 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<title>{{ site.siteName }}: {{ user.getName() }} </title>
 
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <script type="text/javascript">
 var andSoItBegins = (new Date()).getTime();
 </script>

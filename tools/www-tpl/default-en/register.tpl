@@ -6,6 +6,7 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<title>{{ site.siteName }}: Register </title>
 
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <script type="text/javascript">
 var andSoItBegins = (new Date()).getTime();
 </script>
@@ -111,6 +112,14 @@ if (typeof HabboClient != "undefined") { HabboClient.windowName = "client"; }
             window.habboreg = $("habboreg"); // for MSIE and Flash Player 8
         });
 
+    </script>
+    <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        "autoplay": "on",
+        "unmuteOverlay": "hidden",
+        "splashScreen": false,
+    };
     </script>
 
 
