@@ -3,9 +3,9 @@
 RCON_IP="${RCON_IP:-havana-server}"
 MYSQL_HOSTNAME="${MYSQL_HOSTNAME:-mariadb}"
 MYSQL_PORT="${MYSQL_PORT:-3306}"
-MYSQL_USERNAME="${MYSQL_USERNAME:-root}"
-MYSQL_PASSWORD="${MYSQL_PASSWORD:-goldfish}"
-MYSQL_DATABASE="${MYSQL_DATABASE:-havana}"
+MYSQL_USERNAME="${MARIADB_USER:-root}"
+MYSQL_PASSWORD="${MARIADB_PASSWORD:-goldfish}"
+MYSQL_DATABASE="${MARIADB_DATABASE:-havana}"
 
 sed -i -E "s/(mysql.hostname=)(.*)/\1$MYSQL_HOSTNAME/g" webserver-config.ini
 sed -i -E "s/(mysql.port=)(.*)/\1$MYSQL_PORT/g" webserver-config.ini

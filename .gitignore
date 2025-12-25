@@ -28,6 +28,7 @@ Kepler-Server-all.jar
 server.log
 error.log
 .env
+data
 log4j.web.properties
 server.web.log
 error.web.log

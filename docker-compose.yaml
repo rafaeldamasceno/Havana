@@ -1,14 +1,3 @@
-x-mariadb-variables: &mariadb-variables
-  MARIADB_USER: havana
-  MARIADB_PASSWORD: goldfish
-  MARIADB_ROOT_PASSWORD: yourstrongpassword
-  MARIADB_DATABASE: havana
-
-x-havana-variables: &havana-variables
-  MYSQL_USERNAME: havana
-  MYSQL_PASSWORD: goldfish
-  MYSQL_DATABASE: havana
-
 services:
   havana-server:
     depends_on: 
@@ -23,8 +12,7 @@ services:
       - "12323:12323"
     networks:
       - havana
-    environment:
-      <<: *havana-variables
+    env_file: .env
     restart: on-failure
   havana-web:
     depends_on: 
@@ -39,8 +27,7 @@ services:
       - havana
     volumes:
       - ./tools:/havana-web/bin/tools
-    environment:
-      <<: *havana-variables
+    env_file: .env
     restart: on-failure
   mariadb:
     image: "mariadb:latest"
@@ -48,10 +35,9 @@ services:
       - "3306:3306"
     networks:
       - havana
-    environment:
-      <<: *mariadb-variables
+    env_file: .env
     volumes:
-      - data:/var/lib/mysql
+      - ./data/mysql:/var/lib/mysql
       - ./tools/havana.sql:/docker-entrypoint-initdb.d/havana.sql
       - ./tools/migrations/update.1.1.sql:/docker-entrypoint-initdb.d/update.1.1.sql
       - ./tools/migrations/update.1.2.sql:/docker-entrypoint-initdb.d/update.1.2.sql
@@ -63,9 +49,6 @@ services:
       timeout: 5s
       retries: 3
     restart: on-failure
-
-volumes:
-  data:
 
 networks:
   havana:
