@@ -13,7 +13,7 @@ services:
     networks:
       - havana
     env_file: .env
-    restart: on-failure
+    restart: unless-stopped
   havana-web:
     depends_on: 
       mariadb:
@@ -21,18 +21,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-Web
-    ports:
-      - "80:80"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.habbo.rule=Host(`habbo.damasce.no`)"
+      - "traefik.http.routers.habbo.entrypoints=websecure"
+      - "traefik.http.services.habbo.loadbalancer.server.port=80"
     networks:
       - havana
+      - proxy
     volumes:
       - ./tools:/havana-web/bin/tools
     env_file: .env
-    restart: on-failure
+    restart: unless-stopped
   mariadb:
     image: "mariadb:latest"
-    ports:
-      - "3306:3306"
     networks:
       - havana
     env_file: .env
@@ -48,7 +50,25 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-    restart: on-failure
+    restart: unless-stopped
+  phpmyadmin:
+    image: phpmyadmin
+    restart: unless-stopped
+    environment:
+      - PMA_HOST=mariadb
+      - UPLOAD_LIMIT=100M
+    networks:
+      - havana
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.phpmyadmin.rule=Host(`phpmyadmin.damasce.no`)"
+      - "traefik.http.routers.phpmyadmin.entrypoints=websecure"
+      - "traefik.http.routers.phpmyadmin.middlewares=lan@file"
+      - "traefik.http.services.phpmyadmin.loadbalancer.server.port=80"
 
 networks:
   havana:
+  proxy:
+    external: true
+    
